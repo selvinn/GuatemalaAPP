@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Detalle de Promoción</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/promotion-list"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-label>
+    <ion-text color="primary">
+      <h1>{{promotion.title}}</h1>
+      <ion-badge>Q {{promotion.price}}</ion-badge>
+    </ion-text>
+    <br>
+    <br>
+    <ion-text>
+      <p>Dirección: {{promotion.address}}</p>
+    </ion-text>
+    <ion-text color="medium">
+      <p>Coordenadas: {{promotion.latitude}}, {{promotion.longitude}}</p>
+    </ion-text>
+  </ion-label>
+
+</ion-content>

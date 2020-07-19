@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-title>Promociones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let promotion of promotionsData">
+      <ion-label (click)="openPromotion(promotion)">
+        <ion-text>
+          <h2>{{promotion.title}}</h2>
+          <p>Precio: Q {{promotion.price}}</p>
+        </ion-text>
+        <ion-text color="medium">
+          <p>{{promotion.latitude}}, {{promotion.longitude}}</p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
